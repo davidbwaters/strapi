@@ -147,7 +147,7 @@ Use the following steps to change the PostgreSQL password and update Strapi's co
 - Stop the current strapi process and change the password for the `strapi` database user
 
 ```bash
-pm2 stop strapi-develop
+pm2 stop strapi-development
 psql -c "ALTER USER strapi with password 'your-new-password';"
 ```
 
@@ -169,6 +169,6 @@ psql -c "ALTER USER strapi with password 'your-new-password';"
 - Restart Strapi and confirm the password change was successful
 
 ```bash
-pm2 start strapi-develop
-pm2 logs strapi-develop
+pm2 start strapi-development
+pm2 logs strapi-development
 ```
